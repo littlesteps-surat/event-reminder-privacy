@@ -19,7 +19,7 @@
 <main>
   <p class="brand">LittleSteps Lab</p>
   <h1>Event Reminder<br>Privacy Policy</h1>
-  <p>Last updated: November 10, 2026</p>
+  <p>Last updated: November 11, 2026</p>
   <p>This policy describes the Android app <strong>Event Reminder</strong>,
     package <strong>com.littlesteps.eventreminder</strong>, published by
     <strong>LittleSteps Lab</strong>. Questions and privacy requests:
@@ -96,18 +96,24 @@
     If no advertisement is available, the app continues without waiting for one.
     Advertising providers supply the banner content and its interaction controls.</p>
   <p>The app uses Google Mobile Ads and Google User Messaging Platform (UMP).
-    Before enabling advertising you choose a broad age group, 13-17 or 18+.
-    The app stores that choice locally, not an exact age or birth date.
-    You can continue without enabling ads, and can change this choice through
-    <strong>Menu &gt; Advertising and privacy choices</strong>.
-    Users aged 13-17 receive teen and conservative under-age-of-consent
-    protections. Ad requests use a general-audience content limit and request
-    non-personalized ads; this does not mean advertising is data-free.</p>
-  <p>Age-related privacy flags and your consent or opt-out selections are passed
-    to Google's SDKs and services to apply your advertising protections and
+    In version 1.0.2 and later, banners load automatically on the event-list
+    screen when advertising is on. Advertising is on by default for new
+    installations, and an existing explicit choice to turn ads off is kept.
+    You can change this through <strong>Menu &gt; Advertising</strong> without
+    losing the event and reminder features. There is no custom age question.
+    Because the app does not determine your age, every ad request receives
+    child-protective treatment, a general-audience content limit and disabled
+    advertising personalization. These protections do not mean advertising
+    is data-free or that your age has been determined.</p>
+  <p>Versions 1.0 and 1.0.1 required a locally stored broad age choice, 13-17
+    or 18+, before enabling ads, through <strong>Advertising and privacy
+    choices</strong>. They did not collect an exact age or birth date.
+    Their teen option applied conservative under-age-of-consent protections.</p>
+  <p>Advertising protection flags and your consent or opt-out selections are
+    passed to Google's SDKs and services to apply those protections and
     choices. The app does not send an exact age, birth date or event contents
-    for this purpose.</p>
-  <p>After you choose to enable advertising, UMP contacts Google's services to
+    for this purpose, and never uses a saved contact's age as your age.</p>
+  <p>When advertising is on, UMP contacts Google's services to
     determine applicable privacy messages and choices. Where required, the app
     presents Google's configured consent form before requesting ads. When Google
     requires a privacy-options entry point, <strong>Menu &gt; Manage advertising
@@ -116,9 +122,12 @@
     remain usable without ads.</p>
   <p>Google's advertising SDK can collect and share IP addresses (which may
     indicate approximate location), app/ad interactions, diagnostic and
-    performance information, advertising ID, app-set ID and other applicable
-    device/account identifiers for advertising, analytics and fraud prevention.
-    Under-age and consent settings may limit processing. No event name, birthday,
+    performance information and applicable app/device identifiers for
+    advertising, analytics and fraud prevention. Version 1.0.2's child-protected
+    ad requests disable transmission of the Android advertising ID. Earlier
+    versions could use that identifier depending on age and consent settings.
+    Privacy settings limit processing but do not remove all SDK data handling.
+    No event name, birthday,
     note, contact detail or selected image is supplied as an ad targeting input.
     The app does not request Android location permission.</p>
   <p>Google documents encryption in transit for its advertising SDK. Google and
@@ -160,11 +169,14 @@
     deletion, subject to those obligations.</p>
 
   <h2>Audience</h2>
-  <p>Event Reminder is intended for teenagers and adults aged 13 and older,
-    not children under 13. Do not enable advertising if you are under 13.
+  <p>The current Google Play target-audience declaration is ages 13 and older.
+    Version 1.0.2 does not ask users to confirm their age and applies
+    child-protective advertising treatment to everyone. This setting does not
+    establish that the app is designed for toddlers or change the Play
+    target-audience declaration. Follow applicable parental-consent requirements.
     Do not use the app to publish someone else's private contact information.
     Local event entries can include dates for people of different ages; these
-    dates are not used to determine the app user's advertising age group.</p>
+    dates are never used to determine the app user's age.</p>
 
   <h2>Policy changes</h2>
   <p>We will update this page when the app's data practices change and revise the
