@@ -21,63 +21,66 @@
   <h1>Event Reminder<br>Privacy Policy</h1>
   <p>Last updated: November 11, 2026</p>
   <p>This policy describes the Android app <strong>Event Reminder</strong>,
-    package <strong>com.littlesteps.eventreminder</strong>, published by
-    <strong>LittleSteps Lab</strong>. Questions and privacy requests:
+    package <strong>com.littlesteps.eventreminder</strong>, published under the
+    <strong>LittleSteps Lab</strong> developer name. Questions and privacy requests:
     <a href="mailto:littlesteps.surat@gmail.com">littlesteps.surat@gmail.com</a>.</p>
+  <p>The practices below describe version 1.0.5. Earlier distributed versions
+    may differ in their advertising controls, contact-linked deletion behavior
+    and treatment of unknown years.</p>
 
   <h2>What the app does</h2>
   <p>Event Reminder stores birthdays, anniversaries and other yearly occasions,
     schedules notifications, displays home-screen widgets, and helps you prepare
     wishes. The app is free to use, has no in-app purchases or subscriptions,
-    and supports optional Google AdMob bottom-banner advertising.
-    Full-screen advertising is disabled in the current default configuration.
-    There is no Event Reminder
-    account, custom contact-sync server or developer-operated event database.</p>
+    and is supported by Google AdMob bottom-banner advertising on the main list.
+    The app currently does not display full-screen advertising. LittleSteps Lab
+    does not provide an Event Reminder account, a custom contact-sync service or
+    an online database for your events.</p>
 
   <h2>Events and photos stored on your device</h2>
   <p>Names, event types, dates, optional phone/email details, notes, reminder
     preferences, selected photos and message templates are stored in the app's
-    local SQLite database or private app storage. These event contents are not
+    local database or private app storage. These event contents are not
     sent to LittleSteps Lab or to the advertising network. Event data remains
     in app storage until you delete or replace it, clear app storage, or uninstall.
     App-managed temporary photo files are removed after processing. Android
-    automatic app-data backup is disabled.</p>
+    automatic app-data backup is disabled. In version 1.0.5, a date stored with
+    1900 as its year is treated as having no known year and is not used to
+    calculate or display an age.</p>
   <p>Photo selection uses an Android system picker; the app does not request
     broad photo-library or storage permission. Selecting a photo imports a
     resized copy. Contact photos may also be read when contact access is granted.
     Removing an imported image from Event Reminder does not delete the original
     image from your gallery or address book.</p>
 
-  <h2>Optional address-book synchronization</h2>
+  <h2>Optional device-contacts integration</h2>
   <p>You can use the app with manually entered events without granting contacts
-    access. If you enable automatic contact synchronization and grant the
-    Android contacts permission, the app reads contact names, birthday and
-    anniversary/custom date entries, contact links, phone/email details and
-    available contact photos to create and maintain linked local events.</p>
-  <p>Synchronization runs when the app opens, when the address book changes while
-    the app is open, and during background checks scheduled by Android, even
-    when you are not using the app. Android may delay these checks. Source
-    changes and deletions update linked events. An ambiguous changed source with
-    local customizations may be preserved as a separate local event to prevent
-    data loss.</p>
-  <p>The app reads contacts already on this device. Android and your contact
-    account provider, such as Google, manage their own account synchronization.
-    Event Reminder does not access your Gmail inbox, request Google account
-    credentials or upload your contacts to a custom server. In version 1.0.1
-    and later, adding or changing a contact-linked event date can update that
-    selected birthday, anniversary or custom-date entry directly in your address
-    book after you choose Save and grant contact-editing permission. It does not
-    change other contacts or their unrelated fields. Android and the contact
-    provider manage any resulting Google-backed synchronization. Opening the
-    full contact editor remains available for other contact changes. Saving a
-    contact-linked date enables automatic address-book event synchronization,
-    including Android-scheduled background checks, as explained in the date
-    editor. You can turn it off through the app menu.</p>
-  <p>You can turn synchronization off in the app menu or revoke Contacts
-    permission in Android settings. Previously imported local information is
-    not automatically erased by revoking permission; delete those events or
-    clear app storage if you wish to remove it. Deleting a linked event in this
-    app does not itself delete the source contact.</p>
+    access. In version 1.0.5, active contact linking is limited to Google-backed
+    contacts already available through the Android contact service. With
+    Contacts permission, the app can read names, contact links, birthdays,
+    anniversaries and custom dates, phone/email details and available contact
+    photos to create and maintain linked local events.</p>
+  <p>The app may refresh linked information when it opens, while it is open
+    after the Android contact service reports a change, and during background
+    work scheduled by Android. Refresh timing depends on Android's scheduling
+    and device conditions. Existing events imported by earlier versions from
+    device-only or SIM sources are retained as independent local events rather
+    than silently removed.</p>
+  <p>Event Reminder does not access Gmail, ask you to sign in to Google, request
+    Google account credentials, or operate a custom contacts server. Permission
+    to edit contacts is used only after an explicit action to save or delete the
+    selected birthday, anniversary or custom date of a Google-backed device contact.
+    Saving adds or updates only that selected date entry. Deleting a
+    Google-linked event removes only that selected date entry and its linked
+    local event; it does not delete the person or change other contact details.
+    Deleting a local-only event does not change Android contacts.</p>
+  <p>Google account contact synchronization is controlled through Android and
+    Google account settings. A contact change made on the device may reach
+    Google Contacts and other signed-in devices according to those settings,
+    network availability and the account provider's timing; synchronization may
+    be delayed or unavailable. If you revoke Contacts permission, previously
+    imported local information is not automatically erased. Delete the relevant
+    local events or clear app storage if you wish to remove it.</p>
 
   <h2>Notifications and widgets</h2>
   <p>Notification permission is used for event reminders and snooze.
@@ -88,56 +91,49 @@
     someone who can see your device. Review Android's notification visibility
     settings, and remove widgets if this information should not be visible.</p>
 
-  <h2>Advertising and privacy choices</h2>
-  <p>When advertising is enabled, a banner can appear at the bottom of the main
-    screen. Full-screen interstitial advertising is disabled in the current
-    default configuration, including after event saves and on app launch.
-    Notifications and background contact synchronization do not display ads.
-    If no advertisement is available, the app continues without waiting for one.
-    Advertising providers supply the banner content and its interaction controls.</p>
-  <p>The app uses Google Mobile Ads and Google User Messaging Platform (UMP).
-    In version 1.0.2 and later, banners load automatically on the event-list
-    screen when advertising is on. Advertising is on by default for new
-    installations, and an existing explicit choice to turn ads off is kept.
-    You can change this through <strong>Menu &gt; Advertising</strong> without
-    losing the event and reminder features. There is no custom age question.
-    Because the app does not determine your age, every ad request receives
-    child-protective treatment, a general-audience content limit and disabled
-    advertising personalization. These protections do not mean advertising
-    is data-free or that your age has been determined.</p>
-  <p>Versions 1.0 and 1.0.1 required a locally stored broad age choice, 13-17
-    or 18+, before enabling ads, through <strong>Advertising and privacy
-    choices</strong>. They did not collect an exact age or birth date.
-    Their teen option applied conservative under-age-of-consent protections.</p>
-  <p>Advertising protection flags and your consent or opt-out selections are
-    passed to Google's SDKs and services to apply those protections and
-    choices. The app does not send an exact age, birth date or event contents
-    for this purpose, and never uses a saved contact's age as your age.</p>
-  <p>When advertising is on, UMP contacts Google's services to
-    determine applicable privacy messages and choices. Where required, the app
-    presents Google's configured consent form before requesting ads. When Google
-    requires a privacy-options entry point, <strong>Menu &gt; Manage advertising
-    consent</strong> lets you revisit those choices. Ads are not requested unless
-    UMP permits requests. If no permissible consent status is available, reminders
-    remain usable without ads.</p>
-  <p>Google's advertising SDK can collect and share IP addresses (which may
-    indicate approximate location), app/ad interactions, diagnostic and
-    performance information and applicable app/device identifiers for
-    advertising, analytics and fraud prevention. Version 1.0.2's child-protected
-    ad requests disable transmission of the Android advertising ID. Earlier
-    versions could use that identifier depending on age and consent settings.
-    Privacy settings limit processing but do not remove all SDK data handling.
-    No event name, birthday,
-    note, contact detail or selected image is supplied as an ad targeting input.
-    The app does not request Android location permission.</p>
+  <h2>Advertising, consent and privacy options</h2>
+  <p>Version 1.0.5 is an advertising-supported service. When the main event list
+    is used, the app automatically begins requesting a Google AdMob bottom
+    banner, subject to applicable Google privacy requirements. The app currently
+    does not display full-screen advertising, including after event saves or on
+    app launch. Notifications and background contact work do not display ads.
+    Advertising depends on consent status, network access and ad availability;
+    a missing or failed banner does not block the app's event and reminder
+    features. Google supplies the advertisement content and its interaction
+    controls.</p>
+  <p>The app uses Google Mobile Ads SDK 25.5.0 and Google User Messaging
+    Platform (UMP) 4.0.0. The app does not ask a custom age question or infer
+    your age from saved events. As a conservative configuration, every ad
+    request receives child-protective treatment and a general-audience (G)
+    content limit, and the publisher setting disables advertising
+    personalization. These settings do not determine the user's age, make the
+    app child-directed, or make advertising data-free.</p>
+  <p>Google UMP determines whether a privacy message or privacy choices are
+    required for the user. Where required, the app presents Google's configured
+    message before requesting advertising. <strong>Menu &gt; Ad privacy
+    choices</strong> opens Google's privacy options when they are required and
+    available. These choices affect the advertising and data processing that
+    Google permits. If applicable privacy requirements do not permit an ad request,
+    the event and reminder features remain available.</p>
+  <p>Google documents that its Mobile Ads SDK automatically collects and shares
+    IP addresses (which can indicate approximate location), product and ad
+    interactions, diagnostic and performance information, and applicable device
+    or signed-in account identifiers for advertising, analytics and fraud
+    prevention. UMP also processes privacy-message status and choices. The child
+    treatment prevents the Android advertising ID from being sent with those ad
+    requests, but other identifiers and network data can still be processed.
+    Privacy choices and non-personalized or limited ad serving can reduce
+    processing without eliminating all SDK data handling. No event name,
+    birthday, note, contact detail or selected image is supplied as an ad
+    targeting input. The app does not request Android location permission.</p>
   <p>Google documents encryption in transit for its advertising SDK. Google and
     advertising service providers control retention of the data they process;
     LittleSteps Lab does not specify or guarantee a retention period for those
     services. See <a href="https://policies.google.com/privacy">Google's Privacy
     Policy</a> and <a href="https://policies.google.com/technologies/ads">Google's
     advertising information</a>. Android advertising settings let you reset or
-    delete your advertising ID. Changing consent or disabling ads does not
-    necessarily erase previously processed third-party data.</p>
+    delete your advertising ID. Changing a privacy choice does not necessarily
+    erase data already processed by Google or another advertising provider.</p>
 
   <h2>Backups, wishes and external apps</h2>
   <p>Exported JSON backups contain readable names, dates, phone/email details,
@@ -154,13 +150,21 @@
     advertisements and apps may process additional data under their own policies.</p>
 
   <h2>Deletion and your choices</h2>
-  <p>Delete events through their detail dialog. Contact-linked event exclusions
-    may be retained locally to prevent deleted entries from being re-imported.
-    To remove all app-private events, exclusions, imported photos, templates and
-    preferences, use Android Settings &gt; Apps &gt; Event Reminder &gt;
-    Storage &gt; Clear storage, or uninstall. This does not delete source
-    contacts, original gallery photos, external backups, messages or data already
-    processed by Google. Contact those providers for their deletion options.</p>
+  <p>Delete events through their detail dialog. In version 1.0.5, deleting a
+    Google-linked event also deletes only its selected birthday, anniversary or
+    custom date entry from the Google-backed device contact. It never deletes the
+    person or unrelated contact fields. Deleting a local-only event does not
+    change contacts. Whether and when that date deletion reaches Google Contacts
+    or another signed-in device depends on Android and Google account sync
+    settings, network access and provider availability.</p>
+  <p>The app may retain a local record of a removed linked event to avoid
+    importing it again. To remove all app-private events, those records, imported
+    photos, templates and preferences, use Android Settings &gt; Apps &gt; Event
+    Reminder &gt; Storage &gt; Clear storage, or uninstall. Clearing storage or
+    uninstalling does not delete whole source contacts, original gallery photos,
+    external backups, messages or data already processed by Google, and it does
+    not restore a contact date previously deleted through an explicit linked
+    event deletion. Contact the relevant providers for their deletion options.</p>
   <p>There is no app account to delete. Contact us for questions about this
     policy. If you email support, your address and the information you send are
     processed in our support mailbox to respond to your request; avoid sending
@@ -170,7 +174,7 @@
 
   <h2>Audience</h2>
   <p>The current Google Play target-audience declaration is ages 13 and older.
-    Version 1.0.2 does not ask users to confirm their age and applies
+    Version 1.0.5 does not ask users to confirm their age and applies
     child-protective advertising treatment to everyone. This setting does not
     establish that the app is designed for toddlers or change the Play
     target-audience declaration. Follow applicable parental-consent requirements.
